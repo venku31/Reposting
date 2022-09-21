@@ -1,7 +1,0 @@
-## Reposting
-
-Reposting
-
-#### License
-
-MIT
