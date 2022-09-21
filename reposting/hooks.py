@@ -106,7 +106,12 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+	"cron": {
+        "*/15 * * * *": [
+            "reposting.items_revaluation.process_incorrect_balance_qty"
+        ],
+    },
 # 	"all": [
 # 		"reposting.tasks.all"
 # 	],
@@ -122,7 +127,7 @@ app_license = "MIT"
 # 	"monthly": [
 # 		"reposting.tasks.monthly"
 # 	]
-# }
+}
 
 # Testing
 # -------
